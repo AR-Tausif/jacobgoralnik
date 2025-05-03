@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>{/* Add any additional head elements here */}</head>
       <body className={inter.className}>
         <Providers>
-          <main className="">
+          <main className="h-screen overflow-hidden">
             <div className="grid grid-cols-12 items-start">
               <AppLayoutSidebar className="col-span-2" />
               <div className="grid col-span-10">
