@@ -21,7 +21,7 @@ const SidebarLinks = () => {
     {
       icon: <Settings className="p-1" />,
       label: "Settings",
-      href: "/",
+      href: "/settings",
     },
   ];
   return (

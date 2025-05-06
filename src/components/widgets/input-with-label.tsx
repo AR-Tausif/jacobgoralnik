@@ -2,6 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 
 interface InputWithLabelProps extends ComponentPropsWithoutRef<"input"> {
   label: string;
+  inputStyle?: string;
 }
 
 export const InputWithLabel = ({
@@ -11,7 +12,9 @@ export const InputWithLabel = ({
   value,
   placeholder,
   className,
+  inputStyle,
   onChange,
+  ...props
 }: InputWithLabelProps) => {
   return (
     <div className={`mb-4 ${className || ""}`}>
@@ -25,7 +28,10 @@ export const InputWithLabel = ({
         defaultValue={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:border-blue-500"
+        className={`mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring focus:border-blue-500 ${
+          inputStyle || ""
+        }`}
+        {...props}
       />
     </div>
   );
