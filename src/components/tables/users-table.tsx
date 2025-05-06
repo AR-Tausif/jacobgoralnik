@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Edit, Eye, MoreHorizontal, MoreVertical, Trash } from "lucide-react"
+import {  Eye, MoreVertical, Trash } from "lucide-react"
 
 const users = [
   {
@@ -112,7 +112,7 @@ export default function UsersTable() {
         <tbody className="bg-secondary-50/30 divide-y divide-gray-200">
           {users.map((user) => (
             <tr key={user.id} className="hover:bg-gray-50">
-              <td className="py-4 px-6 text-sm text-gray-500">#{user.id}</td>
+              <td className="py-4 px-6j text-sm text-gray-500">#{user.id}</td>
               <td className="py-3 px-6">
                 <div className="flex items-center gap-3">
                   <div className="w-9 h-9 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">

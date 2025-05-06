@@ -6,18 +6,22 @@ const SidebarLinks = () => {
     {
       icon: <PieChart className="p-1" />,
       label: "Overview",
+      href: "/",
     },
     {
       icon: <Calendar className="p-1" />,
       label: "Categories",
+      href: "/categories",
     },
     {
       icon: <User2 className="p-1" />,
       label: "Users",
+      href: "/",
     },
     {
       icon: <Settings className="p-1" />,
       label: "Settings",
+      href: "/",
     },
   ];
   return (
@@ -27,6 +31,7 @@ const SidebarLinks = () => {
           key={link.label.toLowerCase()}
           icon={link.icon}
           label={link.label}
+          href={link.href}
         />
       ))}
     </ul>
