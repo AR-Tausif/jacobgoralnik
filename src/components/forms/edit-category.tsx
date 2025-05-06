@@ -6,7 +6,7 @@ import { DialogTitle } from "../ui/dialog";
 
 export const EditCategory = () => {
   return (
-    <div className="max-w-md mx-auto text-gray-700 p-6 rounded-lg shadow-lg">
+    <div className="w-full text-gray-700 p-6">
       <div className="flex justify-center items-center mb-4">
         <a href="#" className="text-gray-700 text-lg mr-2">
           <MoveLeft />
@@ -46,7 +46,7 @@ export const EditCategory = () => {
         </div>
       </div>
 
-      <Button className="w-full">Add Category</Button>
+      <Button className="w-full">Save Changes</Button>
     </div>
   );
 };

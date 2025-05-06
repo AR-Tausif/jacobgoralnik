@@ -16,7 +16,7 @@ const SidebarLinks = () => {
     {
       icon: <User2 className="p-1" />,
       label: "Users",
-      href: "/",
+      href: "/users",
     },
     {
       icon: <Settings className="p-1" />,
