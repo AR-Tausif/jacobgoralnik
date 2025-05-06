@@ -1,4 +1,7 @@
 import { CarTaxiFront } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { AddNewCategory } from "../forms/add-new-category";
+import { EditCategory } from "../forms/edit-category";
 
 export const CategoryCard = () => {
   return (
@@ -15,9 +18,16 @@ export const CategoryCard = () => {
         <button className="p-1 px-4 bg-red-100 border border-red-500 rounded-lg">
           Delete
         </button>
-        <button className="p-1 px-4 bg-blue-600 border border-blue-5    00 text-gray-100 rounded-lg">
-          Edit
-        </button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <button className="p-1 px-4 bg-blue-600 border border-blue-500 text-gray-100 rounded-lg">
+              Edit
+            </button>
+          </DialogTrigger>
+          <DialogContent>
+            <EditCategory />
+          </DialogContent>
+        </Dialog>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { ArrowLeft, ChevronLeft, MoveLeft, Plus } from "lucide-react";
 import React from "react";
 import { Button } from "../ui/button";
 import { InputWithLabel } from "../widgets/input-with-label";
+import { DialogTitle } from "../ui/dialog";
 
 export const AddNewCategory = () => {
   return (
@@ -10,7 +11,10 @@ export const AddNewCategory = () => {
         <a href="#" className="text-gray-700 text-lg mr-2">
           <MoveLeft />
         </a>
-        <h2 className="text-lg font-semibold">Add new category</h2>
+
+        <DialogTitle className="text-lg font-semibold">
+          Add new category
+        </DialogTitle>
       </div>
 
       <div className="mb-4">
