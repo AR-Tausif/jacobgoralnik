@@ -3,14 +3,14 @@ import React from "react";
 import { Button } from "../ui/button";
 import { InputWithLabel } from "../widgets/input-with-label";
 
-export const AddNewCategory = () => {
+export const EditCategory = () => {
   return (
-    <div className="w-full text-gray-700 p-6">
+    <div className="max-w-md mx-auto text-gray-700 p-6 rounded-lg shadow-lg">
       <div className="flex justify-center items-center mb-4">
         <a href="#" className="text-gray-700 text-lg mr-2">
           <MoveLeft />
         </a>
-        <h2 className="text-lg font-semibold">Add new category</h2>
+        <h2 className="text-lg font-semibold">Edit category</h2>
       </div>
 
       <div className="mb-4">
@@ -19,6 +19,7 @@ export const AddNewCategory = () => {
           className="space-y-3"
           type="text"
           name="categoryName"
+          value={"Vehicles"}
           placeholder="Enter category name"
         />
       </div>
