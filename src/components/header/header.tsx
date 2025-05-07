@@ -16,7 +16,6 @@ import {
 import NavMenu from "@/components/navigation/nav-menu";
 import SearchBar from "@/components/header/search-bar";
 import { Sheet, SheetFooter, SheetTrigger } from "../ui/sheet";
-import { ShoppingCartSheetContent } from "../sheets-contents";
 import { headerData } from "@/assets/data/header-static-data";
 import { useAppSelector } from "@/lib/redux/hooks/hooks";
 import { BRAND_NAME } from "@/assets/data/home-static-data";
@@ -100,7 +99,6 @@ const Header = () => {
                   </span>
                 </button>
               </SheetTrigger>
-              <ShoppingCartSheetContent />
             </Sheet>
             <button className="p-2 rounded-full hover:bg-gray-100 md:hidden">
               <Search size={22} />
@@ -135,58 +133,52 @@ const Header = () => {
 const GainTrustFromUser = () => {
   return (
     <Container>
+      <div className="flex items-center justify-between text-sm py-2 p-4">
+        <p className="text-lg tracking-tight font-bold">
+          {BRAND_NAME} Online Shop{" "}
+        </p>
 
-    
-    <div className="flex items-center justify-between text-sm py-2 p-4">
-      <p className="text-lg tracking-tight font-bold">
-        {BRAND_NAME} Online Shop{" "}
-      </p>
+        {/* Free delvery */}
+        <p className="flex items-center gap-x-2">
+          <Image
+            height="20"
+            width="20"
+            src="//e-liquids.com/cdn/shop/t/404/assets/svg_delivery-van.svg?v=158528530152609669621714742055"
+            alt="Free E-liquids delivery"
+            loading="eager"
+          />
+          <span className="text-green-600">Free fast delivery</span>
+          on orders over £20
+        </p>
 
-      {/* Free delvery */}
-      <p className="flex items-center gap-x-2">
-        <Image
-          height="20"
-          width="20"
-          src="//e-liquids.com/cdn/shop/t/404/assets/svg_delivery-van.svg?v=158528530152609669621714742055"
-          alt="Free E-liquids delivery"
-          loading="eager"
-        />
-        <span className="text-green-600">
-          Free fast delivery
-        </span>
-        on orders over £20
-      </p>
+        {/* Same day dispatch*/}
+        <p className="flex items-center gap-x-2">
+          <Image
+            height="20"
+            width="20"
+            src="//e-liquids.com/cdn/shop/t/404/assets/svg_delivery-parcel.svg?v=183064342667095515711714742055"
+            alt="Same day E-liquids dispatch"
+            loading="eager"
+          />
+          <span className="despatch-text text-red-600">Same day dispatch</span>
+          <p> is by 6:30pm</p>
+        </p>
 
-      {/* Same day dispatch*/}
-      <p className="flex items-center gap-x-2">
-        <Image
-          height="20"
-          width="20"
-          src="//e-liquids.com/cdn/shop/t/404/assets/svg_delivery-parcel.svg?v=183064342667095515711714742055"
-          alt="Same day E-liquids dispatch"
-          loading="eager"
-        />
-        <span className="despatch-text text-red-600">
-          Same day dispatch
-        </span>
-        <p> is by 6:30pm</p>
-      </p>
-
-      {/* Members earn loyality points */}
-      <p className="flex items-center gap-x-2">
-        <Image
-          height="20"
-          width="20"
-          src="//e-liquids.com/cdn/shop/t/404/assets/svg_loyalty-points.svg?v=181831021194075558051714742054"
-          alt="E-liquids loyalty points"
-          loading="eager"
-        />
-        <Link href="/pages/e-liquid-loyalty-page">
-          Members earn loyalty points
-        </Link>
-        on every product
-      </p>
-    </div>
+        {/* Members earn loyality points */}
+        <p className="flex items-center gap-x-2">
+          <Image
+            height="20"
+            width="20"
+            src="//e-liquids.com/cdn/shop/t/404/assets/svg_loyalty-points.svg?v=181831021194075558051714742054"
+            alt="E-liquids loyalty points"
+            loading="eager"
+          />
+          <Link href="/pages/e-liquid-loyalty-page">
+            Members earn loyalty points
+          </Link>
+          on every product
+        </p>
+      </div>
     </Container>
   );
 };
