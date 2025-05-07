@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import NavMenu from "@/components/navigation/nav-menu";
 import SearchBar from "@/components/header/search-bar";
-import { Sheet, SheetFooter, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetTrigger } from "../ui/sheet";
 import { headerData } from "@/assets/data/header-static-data";
 import { useAppSelector } from "@/lib/redux/hooks/hooks";
 import { BRAND_NAME } from "@/assets/data/home-static-data";
