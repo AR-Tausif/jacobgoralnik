@@ -1,4 +1,5 @@
 import { OverviewCard } from "@/components/cards/dashboard-overview-card";
+import { OverviewUserAccounts } from "@/components/charts/overview-users-charts";
 import UsersTable from "@/components/tables/users-table";
 import { TrendingUp } from "lucide-react";
 import React from "react";
@@ -19,6 +20,8 @@ const Page = () => {
           />
         ))}
       </div>
+
+      <OverviewUserAccounts/>
 
       {/* Recent Users */}
       <div className="bg-secondary-50/30 py-6 rounded-md space-y-4">
