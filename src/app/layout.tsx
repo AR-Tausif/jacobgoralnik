@@ -6,8 +6,8 @@ import { BRAND_NAME } from "@/assets/data/home-static-data";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `${BRAND_NAME} Online Multivendor Shop | Kits | FREE DELIVERY`,
-  description: `${BRAND_NAME} is an online multivendor shop which offers largest range of premium eliquid flavours, vape kits, pods, tanks, coils and batteries.`,
+  title: `${BRAND_NAME}`,
+  description: `${BRAND_NAME} description here.`,
 };
 
 export default function RootLayout({

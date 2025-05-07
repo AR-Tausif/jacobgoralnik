@@ -7,7 +7,7 @@ import {
   latestVapeProducts,
 } from ".";
 
-export const BRAND_NAME = "Notun Bazar";
+export const BRAND_NAME = "One Net App";
 export const productSections = [
   {
     title: `BEST SELLING ${BRAND_NAME}`,
