@@ -27,7 +27,7 @@ import Link from "next/link";
 export const AppLayoutSidebar = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`min-h-screen border space-y-8 px-8 py-4 rounded-lg ${className}`}
+      className={`min-h-screen space-y-8 px-8 py-4 rounded-lg ${className}`}
     >
       <div className="flex gap-x-2 items-center">
         <Image
