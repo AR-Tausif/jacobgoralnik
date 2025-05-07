@@ -124,11 +124,11 @@ const chartConfig = {
     label: "Visitors",
   },
   desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
+    label: "Recent User",
+    color: "#6b7280",
   },
   mobile: {
-    label: "Mobile",
+    label: "Last Year",
     color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig
@@ -155,13 +155,13 @@ export function OverviewUserAccounts() {
       <CardHeader className="flex items-center gap-2 space-y-0 border-b py-5 sm:flex-row">
         <div className="grid flex-1 gap-1 text-center sm:text-left">
           <CardTitle>Total Users</CardTitle>
-          <CardDescription>
+          {/* <CardDescription>
             Showing total visitors for the last 3 months
-          </CardDescription>
+          </CardDescription> */}
         </div>
         <Select value={timeRange} onValueChange={setTimeRange}>
           <SelectTrigger
-            className="w-[160px] rounded-lg sm:ml-auto"
+            className="w-[160px] rounded-lg sm:ml-auto bg-gray-500"
             aria-label="Select a value"
           >
             <SelectValue placeholder="Last 3 months" />
