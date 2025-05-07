@@ -1,5 +1,7 @@
+
 import { AppWindow, Bell, History, Search } from "lucide-react";
 import InputBoxWithIcon from "./input-box-with-Icon";
+import DynamicBreadcrumb from "../breadcrumbs/navbar-crumb";
 
 const Navbar = () => {
   return (
@@ -11,11 +13,7 @@ const Navbar = () => {
         </div>
 
         {/* Breadcrumb specify by path url */}
-        <div className="flex gap-x-3 text-sm">
-          <p>Dashboard</p>
-          <p>/</p>
-          <p>Recent</p>
-        </div>
+        <DynamicBreadcrumb/>
       </div>
 
       {/* Right side action buttons */}
